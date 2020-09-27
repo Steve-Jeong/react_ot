@@ -5,10 +5,9 @@ import TOC from "./components/TOC"
 import Content from "./components/Content"
 
 
-
 class App extends Component {
   constructor(props) {
-    super(props);
+    super();   //super(props);와 같이 하면 warning message가 뜬다.
     this.state = {
       subject:{title:'WEB', sub:'World Wide Web!'},
       contents:[
